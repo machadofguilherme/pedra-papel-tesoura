@@ -5,9 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedra, Papel e Tesoura</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/android-chrome-512x512.png">
+    <link rel="manifest" href="assets/images/site.webmanifest">
 </head>
 <body>
-    <h2>Jogo interativo: pedra, papel ou tesoura. ;)</h2>
+    <!-- header section -->
+    <header id="header">
+        <section class="header-container">
+            <div class="header-container-logo">
+                <i class="fab fa-js-square"></i>
+                <h2>Pedra, Papel e Tesoura</h2>
+            </div>
+            <nav class="header-container-nav">
+                <ul>
+                    <a href="index.html">
+                        <li><i class="fas fa-house-user"></i></li>
+                    </a><a href="https://github.com/machadofguilherme" target="_blank">
+                        <li><i class="fab fa-github"></i></li>
+                    </a>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <!-- end header section -->
+    <!-- main section -->
+    <main id="main">
+        <section class="main-container">
+            <h3 class="main-container-title"><hr> Regras:</h3>
+            <ol>
+                <li>Escolha entre 'pedra', 'papel' ou 'tesoura' e então clique em um dos botões abaixo.</li>
+                <li>Você jogará contra o computador.</li>
+                <li>Vence quem derrotar a mão adversária.</li>
+            </ol>
+            <article class="main-container-msg">
+                <p class="round-message"></p>
+            </article>
+            <!-- buttons game -->
+            <article class="main-container-buttons">
+                <button id="rock-btn" class="main-container-btn"><i class="fas fa-hand-rock"></i></button>
+                <button id="paper-btn" class="main-container-btn"><i class="fas fa-hand-paper"></i></button>
+                <button id="scissor-btn" class="main-container-btn"><i class="fas fa-hand-scissors"></i></button>
+            </article>
+            <!-- end buttons game-->
+            <article class="main-container-score">
+                <div class="main-container-score__user">
+                    <i class="fas fa-user"></i>
+                    <div class="main-container-score__value">
+                        <h3 class="score-player" id="score-user">0</h3>
+                    </div>
+                </div>
+                <i class="fas fa-times"></i>
+                <div class="main-container-score__pc">
+                    <div class="main-container-score__value">
+                        <h3 class="score-player" id="score-pc">0</h3>
+                    </div>
+                    <i class="fas fa-desktop"></i>
+                </div>
+            </article>
+        </section>
+    </main>
+    <!-- footer section -->
+    <footer id="footer-container">
+        <section class="footer-container-info">
+            <article class="footer-container-logo">
+                <i class="fab fa-js-square"></i>
+                <h2>PPT</h2>
+            </article>
+            <p id="year">2021</p>
+            <p>Desenvolvido por: <br>Guilherme Machado</p>
+        </section>
+    </footer>
+    <!-- end footer section -->
     <script src="assets/js/main.js"></script>
 </body>
 </html>
